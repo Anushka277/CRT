@@ -1,0 +1,10 @@
+commands to push the vs-code to github
+1)git init
+2)git config --global user.name "Anushka277"
+3)git config --global user.email "...."
+git config --global --list
+4)git add .
+5)git commit -m "message"
+6)git pull origin main
+7)git pull origin main --allow-unrelated-histories
+8)git push origin main

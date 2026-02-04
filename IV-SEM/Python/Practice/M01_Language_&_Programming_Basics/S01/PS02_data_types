@@ -1,0 +1,31 @@
+'''
+Data types in python:
+1.Fundamental data types
+    a.int
+    b.float
+    c.bool(boolean)
+    d.str(string)
+    e.complex
+
+2.Collection data types
+    a.list
+    b.tuple
+    c.set
+    d.dict
+'''
+# Fundamental data types eg:
+x =10
+y = 12.56
+z = 3+6
+print(x,type(x))
+print(y,type(y))
+print(z,type(z))
+f1 = 12e2
+print(f1,type(f1))
+
+#Collection data types eg:
+c1 = 5+3j
+c2 = complex(2,-1)
+print(c1,c2)
+print(c1.real)
+print(c1.imag)
