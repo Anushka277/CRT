@@ -7,7 +7,18 @@ Output:
 1 2 1
 1 3 3 1
 1 4 6 4 1
-
+'''
+#Code for Pascal Triangle
+'''
+n = int(input())
+for i in range(n):
+    row = [1] * (i + 1)
+    for j in range(1, i):
+        row[j] = row[j - 1] * (i - j + 1) // j
+    print(' '.join(map(str, row)))
+'''
+#2. BUTTERFLY PATTERN
+'''
 2. Butterfly Pattern
 n=4
 Output:
@@ -19,7 +30,18 @@ Output:
 ***  ***
 **    **
 *      *
+'''
+#Code for Butterfly Pattern
+'''
+n = int(input())
+for i in range(1, n + 1):
+    print('*' * i + ' ' * (2 * (n - i)) + '*' * i)
+for i in range(n, 0, -1):
+    print('*' * i + ' ' * (2 * (n - i)) + '*' * i)
+'''
 
+#3. HOURGLASS PATTERN
+'''
 3. Hourglass Pattern
 n=4
 Output:
@@ -30,7 +52,9 @@ Output:
 * *
 * * *
 * * * *
-
+'''
+#Code for Hourglass Pattern
+'''
 4. Concentric Square
 n=3
 Output:
@@ -39,6 +63,14 @@ Output:
 3 2 1 2 3
 3 2 2 2 3
 3 3 3 3 3
+'''
+#Code for Concentric Square
+n = int(input())
+for i in range(n, 0, -1): 
+    print(' '.join(str(max(abs(i - j), abs(i - (n - j + 1))) + 1) for j in range(1, n + 1)))
+
+    
+'''
 
 5. Snake Pattern
 n=4
