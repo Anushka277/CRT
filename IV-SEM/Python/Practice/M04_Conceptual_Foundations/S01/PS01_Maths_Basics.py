@@ -57,3 +57,4 @@ print("perfect no." if n==s else "not perfect no.")
 
 
 
+
